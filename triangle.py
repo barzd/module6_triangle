@@ -7,13 +7,6 @@ def is_valid_triangle(a, b, c):
     return (a + b > c) and (a + c > b) and (b + c > a)
 
 
-def is_right_triangle(a, b, c):
-    """Return whether the valid triangle has a right angle."""
-    if not is_valid_triangle(a, b, c):
-        return False
-
-
-
 def classify_triangle(a, b, c):
     """
     Classify the triangle based on the lengths of its sides.
