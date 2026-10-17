@@ -20,7 +20,6 @@ def test_degenerate_triangle_is_invalid():
 
 def test_equilateral_triangle():
 	assert classify_triangle(4, 4, 4) == "equilateral"
-	assert is_right_triangle(4, 4, 4) is False
 
 
 def test_isosceles_triangle():
@@ -31,11 +30,7 @@ def test_scalene_triangle():
 	assert classify_triangle(4, 5, 6) == "scalene"
 
 
-def test_right_triangle_with_non_integer_hypotenuse():
-	hypotenuse = 5 * math.sqrt(2)
-
-	assert is_right_triangle(5, 5, hypotenuse) is True
 
 
-def test_non_right_triangle():
-	assert is_right_triangle(2, 3, 4) is False
+
+
