@@ -2,7 +2,7 @@ import math
 
 import pytest
 
-from triangle import classify_triangle, is_right_triangle, is_valid_triangle
+from triangle import classify_triangle, is_valid_triangle
 
 
 @pytest.mark.parametrize("sides", [(0, 4, 5), (-1, 4, 5), (1, 2, 4)])
