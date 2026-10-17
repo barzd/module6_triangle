@@ -7,7 +7,7 @@ An equilateral triangle has three equal angles, each measuring 60 degrees. A rig
 | test_scalene_triangle | Yes  | Kept | All sides are different. |
 | test_right_triangle_with_non_integer_hypotenuse | Yes  | Edited | It allows for tiny rounding differences in the hypotenuse. |
 
-
+Acceptance Criteria
 • Invalid triangles: If any side is 0 or negative, or if the sides cannot form a triangle, it returns Invalid.
 • Triangle types: Every valid triangle is labeled as equilateral, isosceles, or scalene.
 
