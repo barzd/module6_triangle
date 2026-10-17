@@ -1,5 +1,3 @@
-import math
-
 import pytest
 
 from triangle import classify_triangle, is_valid_triangle
