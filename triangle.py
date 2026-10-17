@@ -1,6 +1,3 @@
-import math
-
-
 def is_valid_triangle(a, b, c):
     """
     Check if the given sides can form a valid triangle.
@@ -15,8 +12,6 @@ def is_right_triangle(a, b, c):
     if not is_valid_triangle(a, b, c):
         return False
 
-    first, second, longest = sorted((a, b, c))
-    return math.isclose(first**2 + second**2, longest**2, rel_tol=1e-9)
 
 
 def classify_triangle(a, b, c):
@@ -25,16 +20,11 @@ def classify_triangle(a, b, c):
 
     return str The type of triangle: 'equilateral', 'isosceles', or 'scalene'.
     """
-    if not is_valid_triangle(a, b, c):
-        return "Invalid"
-
+    
+    
     if a == b == c:
-        classification = "equilateral"
+        return "equilateral"
     elif a == b or b == c or a == c:
-        classification = "isosceles"
+        return "isosceles"
     else:
-        classification = "scalene"
-
-    if is_right_triangle(a, b, c):
-        return f"{classification}; right-angle reinforcement required"
-    return classification
+        return "scalene"
