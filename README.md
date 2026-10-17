@@ -10,3 +10,7 @@ An equilateral triangle has three equal angles, each measuring 60 degrees. A rig
 
 • Invalid triangles: If any side is 0 or negative, or if the sides cannot form a triangle, it returns Invalid.
 • Triangle types: Every valid triangle is labeled as equilateral, isosceles, or scalene.
+
+
+
+Used GitHub Copilot (inline completions) to draft the logic for is_valid_triangle() and classify_triangle(). Rewrote a few parts to help handle rounding differences and to fix an error of sides not making up a triangle. Verified the function behavior and error handling by running pytest after the edits. As well as testing the acceptance criteria against the customers notes.
